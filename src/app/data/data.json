@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "titulo": "Estudar Next.js",
+    "descricao": "Revisar Server Components."
+  },
+  {
+    "id": 2,
+    "titulo": "Fazer exercícios",
+    "descricao": "Resolver atividades de React."
+  },
+  {
+    "id": 3,
+    "titulo": "Configurar Jest",
+    "descricao": "Instalar e testar o ambiente."
+  },
+  {
+    "id": 4,
+    "titulo": "Enviar projeto",
+    "descricao": "Publicar no GitHub."
+  }
+]
