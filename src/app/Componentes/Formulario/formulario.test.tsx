@@ -15,3 +15,14 @@ test("adiciona uma nova tarefa", async () => {
   expect(screen.getByText("Estudar Jest")).toBeInTheDocument();
   expect(screen.getByText("Fazer testes")).toBeInTheDocument();
 });
+
+test("exibe mensagem de erro quando os campos estão vazios", async () => {
+  render(<Formulario />);
+
+  await userEvent.click(screen.getByRole("button", { name: /adicionar/i })
+  );
+
+  expect(
+    screen.getByText("Preencha todos os campos antes de adicionar")
+  ).toBeInTheDocument();
+});

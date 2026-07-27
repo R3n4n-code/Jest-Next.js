@@ -1,41 +1,38 @@
 # 📝 Gerenciador de Tarefas
 
-Projeto desenvolvido para criação e gerenciamento de tarefas utilizando **Next.js**, **TypeScript**, **Jest** e **ESLint**.
+Projeto desenvolvido para criação e gerenciamento de tarefas utilizando **Next.js**, **React**, **TypeScript**, **Jest** e **ESLint**.
 
-O objetivo do projeto é praticar criação de componentes, organização de código, validações de formulários e garantir a qualidade da aplicação através de testes automatizados e análise de código.
-
----
-
-## ✅ Funcionalidades
-
-Criar tarefas
-Listar tarefas
-Validar formulário
-Impedir tarefas vazias
-Gerenciar estado das tarefas
-Testar componentes
-Garantir qualidade do código
+O objetivo do projeto é praticar a criação de componentes, organização de código, validação de formulários e garantir a qualidade da aplicação por meio de testes automatizados e análise de código.
 
 ---
 
-# 🚀 Tecnologias utilizadas
+## 🚀 Tecnologias utilizadas
 
-## ⚛️ Next.js
+### ⚛️ Next.js
 
 Framework baseado em React utilizado para construção da aplicação.
 
-Foi utilizado:
+Recursos utilizados:
 
 - App Router
 - Componentes React
 - Organização por componentes
 - Renderização otimizada
 
----
+### ⚛️ React
 
-## 📘 TypeScript
+Biblioteca utilizada para criação da interface da aplicação.
 
-Utilizado para adicionar tipagem estática ao projeto, tornando o código mais seguro e reduzindo possíveis erros durante o desenvolvimento.
+Foi utilizada para:
+
+- Criação de componentes
+- Gerenciamento de estados
+- Manipulação de eventos
+- Atualização dinâmica da interface
+
+### 📘 TypeScript
+
+Utilizado para adicionar tipagem estática ao projeto.
 
 Principais usos:
 
@@ -46,81 +43,107 @@ Principais usos:
 
 ---
 
-## ⚛️ React
+## 🧪 Testes automatizados
 
-Biblioteca utilizada para criação da interface da aplicação.
+### Jest
 
-Utilizado para:
+O Jest é utilizado para criar e executar testes automatizados, garantindo que as funcionalidades continuem funcionando corretamente após alterações no código.
 
-- Criação de componentes
-- Gerenciamento de estados
-- Manipulação de eventos
-- Atualização dinâmica da interface
-
----
-
-# 🧪 Testes automatizados
-
-## Jest
-
-O Jest é uma ferramenta utilizada para criação e execução de testes automatizados.
-
-Ele permite verificar se as funcionalidades da aplicação continuam funcionando corretamente após alterações no código.
-
-Neste projeto foram realizados testes para:
+Os testes verificam:
 
 - Renderização de componentes
 - Funcionamento do formulário
 - Criação de tarefas
 - Interações do usuário
 
-## Instalação do Jest
-
-Para instalar o Jest no projeto, execute:
+#### Instalação
 
 ```bash
 npm install --save-dev jest
+```
 
-Executar todos os testes:
+#### Executar os testes
 
+```bash
 npm test
+```
+
+ou
+
+```bash
+npm run test:watch
 ```
 
 ---
 
-## React Testing Library
+### React Testing Library
 
-Biblioteca utilizada junto ao Jest para testar componentes React de maneira próxima ao comportamento real de um usuário.
+Biblioteca utilizada juntamente com o Jest para testar componentes React simulando a interação do usuário.
 
-Foi utilizada para:
+Permite:
 
-Encontrar elementos da tela
-Verificar textos
-Testar formulários
-Simular interações
-Confirmar resultados esperados
+- Encontrar elementos na tela
+- Verificar textos
+- Testar formulários
+- Simular interações
+- Confirmar resultados esperados
 
 ---
 
 ## 🧹 ESLint
 
-O ESLint é uma ferramenta utilizada para analisar o código e manter um padrão de qualidade durante o desenvolvimento.
+Ferramenta utilizada para analisar e padronizar o código.
 
-Ele ajuda a encontrar:
+Ela ajuda a identificar:
 
-Erros de programação
-Código não utilizado
-Problemas de tipagem
-Más práticas
-Problemas relacionados ao React e Next.js
-Instalação do ESLint
+- Erros de programação
+- Código não utilizado
+- Problemas de tipagem
+- Más práticas
+- Problemas relacionados ao React e Next.js
 
-Instalar o ESLint:
+#### Instalação
+
 ```bash
 npm install --save-dev eslint
-
 ```
----
-# Autor
 
-Desenvolvido por Renan Mezzacapa
+#### Executar o ESLint
+
+```bash
+npm run lint
+```
+
+---
+
+## ✅ Funcionalidades
+
+- Criar tarefas
+- Listar tarefas
+- Validar formulário
+- Impedir tarefas vazias
+- Gerenciar estado das tarefas
+- Testar componentes
+- Garantir qualidade do código
+
+---
+
+## ▶️ Executando o projeto
+
+Instale as dependências:
+
+```bash
+npm install
+```
+
+Inicie o projeto:
+
+```bash
+npm run dev
+```
+
+---
+
+## 👨‍💻 Autor
+
+Desenvolvido por **Renan Mezzacapa**

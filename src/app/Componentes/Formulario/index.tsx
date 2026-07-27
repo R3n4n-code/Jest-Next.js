@@ -11,9 +11,15 @@ const Formulario = () => {
     const [descricao, setDescricao] = useState("");
     const [tarefas, setTarefas] = useState<Tarefas[]>([]);
     const total = useContadorTarefas(tarefas, tarefajson);
+    const [erro, setErro] = useState("");
     function adicionarTarefa(e: React.FormEvent) {
         e.preventDefault();
-
+        
+        if (titulo.trim() === "" || descricao.trim() === "") {
+            setErro("Preencha todos os campos antes de adicionar");
+            return;
+        }
+        setErro("");
         const novaTarefa = {
             id: Date.now(),
             titulo,
@@ -21,12 +27,12 @@ const Formulario = () => {
         };
 
         setTarefas([...tarefas, novaTarefa]);
-
+        
         setTitulo("");
         setDescricao("");
 
         if (titulo.trim() === "" || descricao.trim() === "") {
-            alert("Preencha todos os campos antes de adicionar");
+            setErro("Preencha todos os campos antes de adicionar");
             return;
         }
     }
@@ -37,7 +43,7 @@ const Formulario = () => {
                 <form onSubmit={adicionarTarefa} className={styles.form}>
                     <label className={styles.label} htmlFor="titulo">Título</label>
                     <input
-                        required
+                        
                         className={styles.input}
                         id="titulo"
                         type="text"
@@ -49,7 +55,7 @@ const Formulario = () => {
                         Descrição
                     </label>
                     <input
-                        required
+                        
                         className={styles.input}
                         id="descricao"
                         type="text"
@@ -60,6 +66,7 @@ const Formulario = () => {
                     <button className={styles.button} type="submit">
                         Adicionar
                     </button>
+                    <p>{erro}</p>
                 </form>
             </div>
 
