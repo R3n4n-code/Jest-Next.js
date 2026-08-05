@@ -4,6 +4,6 @@ export function useContadorTarefas(
   quantidadeInicial: Tarefas[],
   tarefasNovas: Tarefas[]
 ) {
-  return quantidadeInicial.length + tarefasNovas.length;
+  return quantidadeInicial.length + tarefasNovas.length;;
 }
 
