@@ -45,9 +45,9 @@ Principais usos:
 ## ⚙️ Instalação das dependências
 
 Para instalar todas as dependências necessárias do projeto, execute:
-
+```bash
 npm install
-
+```
 Esse comando instala todas as bibliotecas presentes no arquivo package.json, incluindo:
 
 Next.js
@@ -158,12 +158,6 @@ Deploy automático na Vercel
 ---
 
 ## ▶️ Executando o projeto
-
-Instale as dependências:
-
-```bash
-npm install
-```
 
 Inicie o projeto:
 
