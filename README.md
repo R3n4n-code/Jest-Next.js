@@ -42,7 +42,7 @@ Principais usos:
 - Interfaces e objetos
 
 ---
-⚙️ Instalação das dependências
+## ⚙️ Instalação das dependências
 
 Para instalar todas as dependências necessárias do projeto, execute:
 
