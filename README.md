@@ -42,6 +42,22 @@ Principais usos:
 - Interfaces e objetos
 
 ---
+⚙️ Instalação das dependências
+
+Para instalar todas as dependências necessárias do projeto, execute:
+
+npm install
+
+Esse comando instala todas as bibliotecas presentes no arquivo package.json, incluindo:
+
+Next.js
+React
+TypeScript
+Jest
+React Testing Library
+ESLint
+
+---
 
 ## 🧪 Testes automatizados
 
@@ -115,6 +131,19 @@ npm run lint
 ```
 
 ---
+## 🔄 Integração Contínua (GitHub Actions)
+
+O projeto utiliza GitHub Actions para automatizar processos de qualidade e entrega.
+
+A cada atualização enviada ao repositório, o pipeline executa automaticamente:
+
+Instalação das dependências
+Verificação do código com ESLint
+Execução dos testes automatizados
+Build de produção
+Deploy automático na Vercel
+
+---
 
 ## ✅ Funcionalidades
 
@@ -143,6 +172,10 @@ npm run dev
 ```
 
 ---
+
+## Vercel
+
+Este projeto esta publicado no Vercel https://jest-next-guxlfoavt-nexablog.vercel.app/
 
 ## 👨‍💻 Autor
 
